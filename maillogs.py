@@ -1,16 +1,13 @@
 import smtplib
 from email.message import EmailMessage
 
-# Email configuration
 sender_email = ""
 receiver_email = ""
 email_password = ""
 
-# SMTP server configuration
 smtp_server = "smtp.gmail.com"
 smtp_port = 465
 
-# Define the function to send an email
 def send_log_email():
     try:
         msg = EmailMessage()
@@ -33,5 +30,4 @@ def send_log_email():
     except Exception as e:
         print("Failed to send email:", e)
 
-# Call the function to test
 send_log_email()

