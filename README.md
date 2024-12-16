@@ -53,6 +53,7 @@ This project implements a keylogger using Python, which captures keystrokes, enc
    sender_email = "your-email@gmail.com"
    receiver_email = "receiver-email@gmail.com"
    email_password = "your-password"
+   #generate an application password and not use your normal password. For gmail you can search for application passwords in the manage account and create a new application password
    ```
 3. (Optional) Update the email schedule time in seconds within the `schedule_email()` function in `test_1.py`.
 
@@ -107,4 +108,4 @@ python maillogs.py
 - Email logging is set to every 60 seconds but can be adjusted in `schedule_email()`.
 
 ## Disclaimer
-This code is intended for educational purposes only. Use responsibly and only on systems and networks where you have permission. Unauthorized keylogging or data collection without consent is illegal and punishable by law.
+This code is intended for educational purposes only. Use responsibly and only on systems and networks where you have permission. Unauthorized keylogging or data collection without consent is illegal and punishable by law.a
